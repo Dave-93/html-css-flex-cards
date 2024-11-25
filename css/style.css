@@ -5,15 +5,30 @@
 }
 
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
 }
 
+/*HEADER*/
 h1{
-    color: rgb(233, 93, 146);
+    color: rgb(255, 7, 123);
 }
 
-h1, p{
+header > h1, header > p{
     margin: 30px 0;
+    text-align: center;
+}
+
+header, .container-box{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+ /*MAIN*/
+.container-box{
+    display: flex;   
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 10px;
+       
+    background-color: rgb(42, 248, 77);/*da togliere*/
 }
