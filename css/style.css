@@ -19,7 +19,7 @@ header > h1, header > p{
 }
 
 header, .container-box{
-    width: 1000px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -27,16 +27,17 @@ header, .container-box{
 .container-box{
     display: flex;   
     flex-wrap: wrap;
-    row-gap: 30px;
+    row-gap: 50px;
     column-gap: 10px;
-       
-    background-color: rgb(42, 248, 77);/*da togliere*/
+    justify-content: center;
 }
 
 .box{
     background-color: black;
     color: white;
     display: flex;
+
+    /* flex-basis: 450px; */
     flex-basis: calc((100% / 3)  - 7px);
 }
 
@@ -46,16 +47,15 @@ header, .container-box{
 
 .box-info{
     width: 70%;
-    display: flex;                      /**/
-    flex-direction: column;             /*è più "CORRETTO" rendere il box flex per usare la sue proprietà o mettere semplicemente dei mergin ai componenti del suo contenuto? (vedi sotto)*/
-    justify-content: space-around;      /**/
+    display: flex;  
+    flex-direction: column; 
+    justify-content: center;   
+    padding-left: 10px;           
 }
-/* .box-info > h3{
-    margin-top: 10px;
-}
+
 .box-info > p{
-    margin: 10px 0;
-} */
+    margin: 15px 0;
+}
 
 .box-info > a{
     color: cyan;
