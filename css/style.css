@@ -37,7 +37,7 @@ header, .container-box{
     background-color: black;
     color: white;
     display: flex;
-    
+    flex-basis: calc((100% / 3)  - 7px);
 }
 
 .box img{
@@ -46,15 +46,16 @@ header, .container-box{
 
 .box-info{
     width: 70%;
+    display: flex;                      /**/
+    flex-direction: column;             /*è più "CORRETTO" rendere il box flex per usare la sue proprietà o mettere semplicemente dei mergin ai componenti del suo contenuto? (vedi sotto)*/
+    justify-content: space-around;      /**/
 }
-
-.box-info > h3{
+/* .box-info > h3{
     margin-top: 10px;
 }
-
 .box-info > p{
     margin: 10px 0;
-}
+} */
 
 .box-info > a{
     color: cyan;
