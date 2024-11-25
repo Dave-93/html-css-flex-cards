@@ -37,6 +37,7 @@ header, .container-box{
     background-color: black;
     color: white;
     display: flex;
+    
 }
 
 .box img{
