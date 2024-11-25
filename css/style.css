@@ -32,3 +32,30 @@ header, .container-box{
        
     background-color: rgb(42, 248, 77);/*da togliere*/
 }
+
+.box{
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.box img{
+    width: 30%;
+}
+
+.box-info{
+    width: 70%;
+}
+
+.box-info > h3{
+    margin-top: 10px;
+}
+
+.box-info > p{
+    margin: 10px 0;
+}
+
+.box-info > a{
+    color: cyan;
+    text-decoration: none;
+}
